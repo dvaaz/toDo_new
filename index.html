@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>ToDo</title>
 </head>
-
 <body>
-  <div class="container">
-    <div class="event">
-      <h1 class="title">ToDo</h1>
-      <form id="formulario">
-        <input type="text" id="todoForm">
-        <button>Novo item</button>
+  <div class="app">
+    <div class="todo-list">
+      <h1 class="title">
+        ToDo
+      </h1>
+  
+      <form class="form" action="">
+        <input class="form-input" type="text">
+        <button class="form-button"> Novo Item </button>
       </form>
+
       <ul class="list">
         <li class="task">
-          <p class="content">Comprar alguma coisa</p>
+          <p class="content"> Comprar um iPhone20</p>
         </li>
       </ul>
     </div>
-    <!-- fim da primeira div -->
-    <div class="static">
-      <h2 class="subtitle">Lista de tarefas</h2>
-      <p class="description">Organize suas tareas diárias com eficiência! Use esse gerenciador de tarefas para anotar e
-        controlar tudo o que você precisa fazer.</p>
-    </div>
   </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
