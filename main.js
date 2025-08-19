@@ -1,4 +1,5 @@
 import BotaoConclui from "./components/concluiTarefa.js";
+import BotaoDeleta from "./components/deletaTarefa.js";
 // EVENTO
 // Onde vai acontecer -> botão
 // Qual evento vai acontecer -> click
@@ -23,6 +24,7 @@ const criarTarefa = (evento) => {
     
     lista.appendChild(tarefa);
     tarefa.appendChild(BotaoConclui());
+    tarefa.appendChild(BotaoDeleta());
     input.value = ""; // retorna "" para o data-input
 
 };

@@ -154,6 +154,9 @@ body {
   
   .content {
     margin: 0;
+    /* limite de espaço */
+    width: 150px;
+    overflow: hidden; 
   }
   
   .task.done .content {
