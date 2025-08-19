@@ -1,3 +1,4 @@
+import BotaoConclui from "./components/concluiTarefa.js";
 // EVENTO
 // Onde vai acontecer -> botão
 // Qual evento vai acontecer -> click
@@ -30,33 +31,6 @@ const novaTarefa = document.querySelector("[data-form-button]");
 novaTarefa.addEventListener('click', criarTarefa); // addEventListener sempre que for criar um evento,
 //  não há "()" pois não queremos que ela seja invocada imediatamente, apenas quando houver o click
 
-// Criando um componente, por convençao PascalCase
-const BotaoConclui = () => {
-    const criarBotao = document.createElement("button");
-    criarBotao.classList.add("check-button");
-
-    // const icone = document.createElement("span");
-    // icone.classList.add("material-symbols-outlined");
-    // const botaoConcluido = `check_box`;
-    // icone.innerHTML = botaoConcluido;
-    
-
-    criarBotao.innerText = "concluir"; // .innerText é um atributo
-
-    criarBotao.addEventListener('click', concluirTarefa);
-
-    criarBotao.addEventListener('click', () => {
-        console.log("Fui clicado");
-    })
-
-    return criarBotao;
-}
-
-const concluirTarefa = (evento) => {
-    const finalizar = evento.target; // devolvera o button button => button
-    const tarefaCompleta = finalizar.parentElement;
-    tarefaCompleta.classList.toggle('done'); // toggle devolve um True or False
-}
 
 
 
